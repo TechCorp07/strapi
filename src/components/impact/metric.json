@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_impact_metrics",
+  "info": {
+    "displayName": "Impact Metric",
+    "description": "Key impact metrics and statistics"
+  },
+  "attributes": {
+    "value": {
+      "type": "string",
+      "required": true
+    },
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

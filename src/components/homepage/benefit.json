@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_homepage_benefits",
+  "info": {
+    "displayName": "Benefit",
+    "description": "Individual benefit item"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "impact": {
+      "type": "string",
+      "required": false
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "link": {
+      "type": "string",
+      "required": false
+    }
+  }
+}

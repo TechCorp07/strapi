@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "insight_page_heroes",
+  "info": {
+    "singularName": "insight-page-hero",
+    "pluralName": "insight-page-heroes",
+    "displayName": "Insight Page Hero",
+    "description": "Hero sections for Insights pages (Blog, News, Case Studies, Community)"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "page": {
+      "type": "enumeration",
+      "enum": ["blog", "news", "case-studies", "community"],
+      "required": true,
+      "unique": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "heroImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"]
+    }
+  }
+}

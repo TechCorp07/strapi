@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_homepage_industries",
+  "info": {
+    "displayName": "Industry",
+    "description": "Individual industry with services"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "icon": {
+      "type": "enumeration",
+      "enum": ["heart", "graduation-cap", "building", "smartphone"],
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "subServices": {
+      "type": "component",
+      "repeatable": true,
+      "component": "homepage.sub-service"
+    }
+  }
+}

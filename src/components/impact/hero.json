@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_impact_heroes",
+  "info": {
+    "displayName": "Impact Hero",
+    "description": "Hero section for impact story"
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "text",
+      "required": true
+    },
+    "backgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"]
+    }
+  }
+}

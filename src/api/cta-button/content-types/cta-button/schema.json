@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cta_buttons",
+  "info": {
+    "singularName": "cta-button",
+    "pluralName": "cta-buttons",
+    "displayName": "CTA Buttons",
+    "description": "Reusable call-to-action button text and links"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "key": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "text": {
+      "type": "string",
+      "required": true
+    },
+    "link": {
+      "type": "string",
+      "required": false
+    },
+    "variant": {
+      "type": "enumeration",
+      "enum": ["primary", "secondary", "outline", "ghost"],
+      "default": "primary"
+    },
+    "description": {
+      "type": "text",
+      "required": false
+    }
+  }
+}

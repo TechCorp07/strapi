@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_homepage_industries_sections",
+  "info": {
+    "displayName": "Industries Section",
+    "description": "Industries section with title and industries"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "Industries We Serve"
+    },
+    "subtitle": {
+      "type": "text",
+      "required": true
+    },
+    "industries": {
+      "type": "component",
+      "repeatable": true,
+      "component": "homepage.industry"
+    }
+  }
+}

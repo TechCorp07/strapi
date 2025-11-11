@@ -1,0 +1,61 @@
+{
+    "kind": "collectionType",
+    "collectionName": "case_studies",
+    "info": {
+        "singularName": "case-study",
+        "pluralName": "case-studies",
+        "displayName": "Case Study",
+        "description": "Customer case studies"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {
+        "content-manager": {
+            "visible": true
+        },
+        "content-type-builder": {
+            "visible": true
+        }
+    },
+    "attributes": {
+        "title": {
+            "type": "string",
+            "required": true
+        },
+        "slug": {
+            "type": "uid",
+            "targetField": "title",
+            "required": true,
+            "unique": true
+        },
+        "client": {
+            "type": "string"
+        },
+        "industry": {
+            "type": "string"
+        },
+        "challenge": {
+            "type": "richtext"
+        },
+        "solution": {
+            "type": "richtext"
+        },
+        "results": {
+            "type": "json",
+            "default": []
+        },
+        "image": {
+            "type": "media",
+            "multiple": false,
+            "allowedTypes": [
+                "images"
+            ]
+        },
+        "metrics": {
+            "type": "component",
+            "repeatable": true,
+            "component": "case-study.metric"
+        }
+    }
+}

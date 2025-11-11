@@ -1,0 +1,35 @@
+{
+  "kind": "singleType",
+  "collectionName": "header_navigation",
+  "info": {
+    "singularName": "header-navigation",
+    "pluralName": "header-navigations",
+    "displayName": "Header Navigation",
+    "description": "Configure header navigation menu items and structure"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "servicesMenu": {
+      "type": "component",
+      "repeatable": true,
+      "component": "navigation.menu-item"
+    },
+    "insightsMenu": {
+      "type": "component",
+      "repeatable": true,
+      "component": "navigation.menu-item"
+    },
+    "aboutMenu": {
+      "type": "component",
+      "repeatable": true,
+      "component": "navigation.menu-item"
+    },
+    "ctaButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "navigation.cta-button"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_homepage_partners",
+  "info": {
+    "displayName": "Partner",
+    "description": "Partner or certification logo"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"]
+    },
+    "website": {
+      "type": "string"
+    }
+  }
+}

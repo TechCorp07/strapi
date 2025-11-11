@@ -1,0 +1,139 @@
+{
+  "kind": "singleType",
+  "collectionName": "site_settings",
+  "info": {
+    "singularName": "site-setting",
+    "pluralName": "site-settings",
+    "displayName": "Site Settings",
+    "description": "Global site settings including contact information, business hours, and company details"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "siteName": {
+      "type": "string",
+      "required": true,
+      "default": "Peak Point Africa"
+    },
+    "tagline": {
+      "type": "string",
+      "default": "Outsource smarter, Operate leaner, Grow faster"
+    },
+    "description": {
+      "type": "text",
+      "default": "Leading BPO services provider in Africa, specializing in healthcare, education, enterprise, and technology solutions."
+    },
+    "contactEmail": {
+      "type": "email",
+      "required": true,
+      "default": "info@peakpoint.africa"
+    },
+    "salesEmail": {
+      "type": "email",
+      "default": "sales@peakpoint.africa"
+    },
+    "supportEmail": {
+      "type": "email",
+      "default": "support@peakpoint.africa"
+    },
+    "careersEmail": {
+      "type": "email",
+      "default": "careers@peakpoint.africa"
+    },
+    "partnershipsEmail": {
+      "type": "email",
+      "default": "partnerships@peakpoint.africa"
+    },
+    "phoneKenya": {
+      "type": "string",
+      "default": "+254 XXX XXX XXX"
+    },
+    "phoneUS": {
+      "type": "string",
+      "default": "+1 XXX XXX XXXX"
+    },
+    "phoneUK": {
+      "type": "string"
+    },
+    "whatsapp": {
+      "type": "string",
+      "default": "+254 XXX XXX XXX"
+    },
+    "addressLine1": {
+      "type": "string",
+      "default": "Nairobi, Kenya"
+    },
+    "addressLine2": {
+      "type": "string",
+      "default": "East Africa"
+    },
+    "city": {
+      "type": "string",
+      "default": "Nairobi"
+    },
+    "country": {
+      "type": "string",
+      "default": "Kenya"
+    },
+    "postalCode": {
+      "type": "string"
+    },
+    "businessHours": {
+      "type": "string",
+      "default": "Mon-Fri: 8AM - 6PM EAT"
+    },
+    "supportAvailability": {
+      "type": "string",
+      "default": "24/7 Support Available"
+    },
+    "linkedinUrl": {
+      "type": "string",
+      "default": "https://linkedin.com/company/peakpoint-africa"
+    },
+    "facebookUrl": {
+      "type": "string",
+      "default": "https://facebook.com/peakpointafrica"
+    },
+    "twitterUrl": {
+      "type": "string",
+      "default": "https://twitter.com/peakpointafrica"
+    },
+    "youtubeUrl": {
+      "type": "string",
+      "default": "https://youtube.com/@peakpointafrica"
+    },
+    "instagramUrl": {
+      "type": "string",
+      "default": "https://instagram.com/peakpointafrica"
+    },
+    "whatsappUrl": {
+      "type": "string",
+      "default": "https://wa.me/254XXXXXXXXX"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "favicon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "metaTitle": {
+      "type": "string",
+      "default": "Peak Point Africa - Leading BPO Services Provider"
+    },
+    "metaDescription": {
+      "type": "text",
+      "default": "Transform your business with Peak Point Africa's comprehensive BPO services across healthcare, education, enterprise, and technology sectors."
+    },
+    "metaKeywords": {
+      "type": "text",
+      "default": "BPO, outsourcing, healthcare RCM, data annotation, Africa, Kenya, business process outsourcing"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_footer_service_links",
+  "info": {
+    "displayName": "Service Link",
+    "description": "Footer service link"
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "href": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

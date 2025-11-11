@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "footer_settings",
+  "info": {
+    "singularName": "footer-setting",
+    "pluralName": "footer-settings",
+    "displayName": "Footer Settings",
+    "description": "Manage footer social links and contact information"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "socialLinks": {
+      "type": "component",
+      "repeatable": false,
+      "component": "footer.social-links"
+    },
+    "contactInfo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "footer.contact-info"
+    }
+  }
+}

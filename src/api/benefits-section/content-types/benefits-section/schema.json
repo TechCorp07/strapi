@@ -1,0 +1,32 @@
+{
+  "kind": "singleType",
+  "collectionName": "benefits_section",
+  "info": {
+    "singularName": "benefits-section",
+    "pluralName": "benefits-sections",
+    "displayName": "Benefits Section",
+    "description": "Homepage benefits carousel content"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "sectionTitle": {
+      "type": "string",
+      "required": true,
+      "default": "Why Partner With Peak Point"
+    },
+    "sectionSubtitle": {
+      "type": "text",
+      "default": "Discover the advantages that set us apart"
+    },
+    "benefits": {
+      "type": "component",
+      "repeatable": true,
+      "component": "homepage.benefit",
+      "required": true,
+      "min": 3,
+      "max": 10
+    }
+  }
+}

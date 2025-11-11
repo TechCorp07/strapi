@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_homepage_benefits_sections",
+  "info": {
+    "displayName": "Benefits Section",
+    "description": "Benefits carousel section"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "Why Choose Peak Point"
+    },
+    "subtitle": {
+      "type": "text",
+      "required": false
+    },
+    "benefits": {
+      "type": "component",
+      "repeatable": true,
+      "component": "homepage.benefit"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "collectionName": "components_impact_theory_of_changes",
+  "info": {
+    "displayName": "theory-of-change",
+    "description": "Logic from inputs to outcomes"
+  },
+  "attributes": {
+    "narrative": { "type": "text", "required": true }
+  }
+}

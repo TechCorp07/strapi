@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_footer_social_links",
+  "info": {
+    "displayName": "Social Links",
+    "description": "Social media links for footer"
+  },
+  "options": {},
+  "attributes": {
+    "linkedin": {
+      "type": "string",
+      "required": true,
+      "default": "https://linkedin.com/company/peakpoint"
+    },
+    "facebook": {
+      "type": "string",
+      "required": true,
+      "default": "https://facebook.com/peakpoint"
+    },
+    "twitter": {
+      "type": "string",
+      "required": true,
+      "default": "https://twitter.com/peakpoint"
+    },
+    "youtube": {
+      "type": "string",
+      "required": true,
+      "default": "https://youtube.com/@peakpoint"
+    },
+    "whatsapp": {
+      "type": "string",
+      "required": true,
+      "default": "https://whatsapp.com/channel/peakpoint"
+    }
+  }
+}

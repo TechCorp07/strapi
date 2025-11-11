@@ -1,0 +1,11 @@
+{
+  "collectionName": "components_impact_sdgs",
+  "info": {
+    "displayName": "sdg",
+    "description": "Sustainable Development Goal alignment"
+  },
+  "attributes": {
+    "goal": { "type": "string", "required": true },
+    "details": { "type": "text" }
+  }
+}

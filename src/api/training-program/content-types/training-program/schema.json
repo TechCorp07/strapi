@@ -1,0 +1,100 @@
+{
+  "kind": "collectionType",
+  "collectionName": "training_programs",
+  "info": {
+    "singularName": "training-program",
+    "pluralName": "training-programs",
+    "displayName": "Training Program",
+    "description": "Training programs available for enrollment"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": ["Healthcare", "Technology", "Business", "Data Science"],
+      "required": true
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": ["MRI Imaging", "Data Annotation", "RCM", "Medical Coding", "AI/ML", "Other"],
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "duration": {
+      "type": "string",
+      "required": true
+    },
+    "level": {
+      "type": "enumeration",
+      "enum": ["Beginner", "Intermediate", "Advanced"],
+      "required": true,
+      "default": "Beginner"
+    },
+    "format": {
+      "type": "enumeration",
+      "enum": ["Online", "In-Person", "Hybrid"],
+      "required": true,
+      "default": "Online"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "currency": {
+      "type": "string",
+      "default": "USD"
+    },
+    "maxStudents": {
+      "type": "integer"
+    },
+    "prerequisites": {
+      "type": "text"
+    },
+    "learningOutcomes": {
+      "type": "json"
+    },
+    "syllabus": {
+      "type": "json"
+    },
+    "instructor": {
+      "type": "string"
+    },
+    "startDate": {
+      "type": "date"
+    },
+    "endDate": {
+      "type": "date"
+    },
+    "enrollmentDeadline": {
+      "type": "date"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false
+    },
+    "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}

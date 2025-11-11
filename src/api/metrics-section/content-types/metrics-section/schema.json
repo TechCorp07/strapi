@@ -1,0 +1,32 @@
+{
+  "kind": "singleType",
+  "collectionName": "metrics_section",
+  "info": {
+    "singularName": "metrics-section",
+    "pluralName": "metrics-sections",
+    "displayName": "Metrics Section",
+    "description": "Homepage metrics/statistics section"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "sectionTitle": {
+      "type": "string",
+      "required": true,
+      "default": "Delivering Measurable Results"
+    },
+    "sectionSubtitle": {
+      "type": "text",
+      "default": "Our track record speaks for itself"
+    },
+    "metrics": {
+      "type": "component",
+      "repeatable": true,
+      "component": "homepage.metric",
+      "required": true,
+      "min": 3,
+      "max": 6
+    }
+  }
+}

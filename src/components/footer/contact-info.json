@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_footer_contact_info",
+  "info": {
+    "displayName": "Contact Info",
+    "description": "Contact information for footer"
+  },
+  "options": {},
+  "attributes": {
+    "email": {
+      "type": "email",
+      "required": true,
+      "default": "info@peakpoint.africa"
+    },
+    "phone": {
+      "type": "string",
+      "required": true,
+      "default": "+254 XXX XXX XXX"
+    },
+    "address": {
+      "type": "text",
+      "required": true,
+      "default": "Nairobi, Kenya"
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_page",
+  "info": {
+    "singularName": "about-page",
+    "pluralName": "about-pages",
+    "displayName": "About Page",
+    "description": "About page content"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "heroTitle": {
+      "type": "string",
+      "required": true,
+      "default": "Transforming Business Through Innovation"
+    },
+    "heroDescription": {
+      "type": "text",
+      "required": true
+    },
+    "heroImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "stats": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about.stat",
+      "required": true,
+      "min": 4,
+      "max": 4
+    },
+    "whoWeAreTitle": {
+      "type": "string",
+      "default": "Who We Are"
+    },
+    "whoWeAreContent": {
+      "type": "richtext",
+      "required": true
+    },
+    "whoWeAreImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "missionTitle": {
+      "type": "string",
+      "default": "Our Mission"
+    },
+    "missionContent": {
+      "type": "text",
+      "required": true
+    },
+    "visionTitle": {
+      "type": "string",
+      "default": "Our Vision"
+    },
+    "visionContent": {
+      "type": "text",
+      "required": true
+    },
+    "valuesTitle": {
+      "type": "string",
+      "default": "Our Core Values"
+    },
+    "valuesSubtitle": {
+      "type": "string",
+      "default": "The principles that guide everything we do"
+    },
+    "values": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about.value",
+      "required": true,
+      "min": 4,
+      "max": 6
+    }
+  }
+}

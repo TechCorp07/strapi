@@ -1,0 +1,80 @@
+{
+  "kind": "singleType",
+  "collectionName": "partnerships_page",
+  "info": {
+    "singularName": "partnerships-page",
+    "pluralName": "partnerships-pages",
+    "displayName": "Partnerships Page",
+    "description": "Partnerships page content"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "heroTitle": {
+      "type": "string",
+      "required": true,
+      "default": "Let's Transform Africa Together"
+    },
+    "heroSubtitle": {
+      "type": "text",
+      "required": true
+    },
+    "heroImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "welcomeTitle": {
+      "type": "string",
+      "default": "Welcome, Future Partner"
+    },
+    "welcomeContent": {
+      "type": "richtext",
+      "required": true
+    },
+    "opportunitiesTitle": {
+      "type": "string",
+      "default": "Partnership Opportunities"
+    },
+    "opportunities": {
+      "type": "component",
+      "repeatable": true,
+      "component": "partnerships.opportunity",
+      "required": true,
+      "min": 3,
+      "max": 6
+    },
+    "whyPartnerTitle": {
+      "type": "string",
+      "default": "Why Partner With Peak Point?"
+    },
+    "whyPartnerReasons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "partnerships.reason",
+      "required": true,
+      "min": 4,
+      "max": 8
+    },
+    "formTitle": {
+      "type": "string",
+      "default": "Start the Conversation"
+    },
+    "formSubtitle": {
+      "type": "text"
+    },
+    "nextStepsTitle": {
+      "type": "string",
+      "default": "What Happens Next?"
+    },
+    "nextSteps": {
+      "type": "component",
+      "repeatable": true,
+      "component": "partnerships.step",
+      "required": true,
+      "min": 4,
+      "max": 6
+    }
+  }
+}

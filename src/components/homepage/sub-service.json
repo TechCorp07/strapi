@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_homepage_sub_services",
+  "info": {
+    "displayName": "Sub Service",
+    "description": "Sub-service item"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "footer_navigation",
+  "info": {
+    "singularName": "footer-navigation",
+    "pluralName": "footer-navigations",
+    "displayName": "Footer Navigation",
+    "description": "Footer navigation links and structure"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "industries": {
+      "type": "component",
+      "repeatable": true,
+      "component": "footer.industry-column",
+      "required": true,
+      "min": 4,
+      "max": 6
+    },
+    "companyTagline": {
+      "type": "string",
+      "default": "Outsource smarter, Operate leaner, Grow faster."
+    },
+    "copyrightText": {
+      "type": "string",
+      "default": "Peak Point Africa. All rights reserved."
+    }
+  }
+}

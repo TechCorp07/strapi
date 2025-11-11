@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_footer_industry_columns",
+  "info": {
+    "displayName": "Industry Column",
+    "description": "Footer industry column with services"
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "services": {
+      "type": "component",
+      "repeatable": true,
+      "component": "footer.service-link",
+      "required": true
+    }
+  }
+}

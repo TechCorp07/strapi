@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepage_content",
+  "info": {
+    "singularName": "homepage-content",
+    "pluralName": "homepage-contents",
+    "displayName": "Homepage Content",
+    "description": "Manage all homepage content including hero slides, industries, and benefits"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "heroSlides": {
+      "type": "component",
+      "repeatable": true,
+      "component": "homepage.hero-slide"
+    },
+    "industriesSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "homepage.industries-section"
+    },
+    "benefitsSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "homepage.benefits-section"
+    }
+  }
+}

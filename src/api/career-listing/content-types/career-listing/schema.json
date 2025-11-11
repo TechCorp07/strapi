@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "career_listings",
+  "info": {
+    "singularName": "career-listing",
+    "pluralName": "career-listings",
+    "displayName": "Career Listing",
+    "description": "Job openings and career opportunities"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "department": {
+      "type": "string",
+      "required": true
+    },
+    "location": {
+      "type": "string",
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": ["Full-time", "Part-time", "Contract", "Remote"],
+      "default": "Full-time"
+    },
+    "description": {
+      "type": "text"
+    },
+    "requirements": {
+      "type": "richtext"
+    },
+    "responsibilities": {
+      "type": "richtext"
+    },
+    "applicationUrl": {
+      "type": "string"
+    }
+  }
+}

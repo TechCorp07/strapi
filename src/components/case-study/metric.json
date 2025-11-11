@@ -1,0 +1,18 @@
+{
+    "collectionName": "components_case_study_metrics",
+    "info": {
+        "displayName": "Metric",
+        "description": "Single metric with label and value"
+    },
+    "options": {},
+    "attributes": {
+        "label": {
+            "type": "string",
+            "required": true
+        },
+        "value": {
+            "type": "string",
+            "required": true
+        }
+    }
+}

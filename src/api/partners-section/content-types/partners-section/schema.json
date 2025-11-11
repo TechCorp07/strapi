@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "partners_section",
+  "info": {
+    "singularName": "partners-section",
+    "pluralName": "partners-sections",
+    "displayName": "Partners Section",
+    "description": "Homepage partners/certifications scroll"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "sectionTitle": {
+      "type": "string",
+      "required": true,
+      "default": "Trusted Partners & Certifications"
+    },
+    "partners": {
+      "type": "component",
+      "repeatable": true,
+      "component": "homepage.partner",
+      "required": true,
+      "min": 4
+    }
+  }
+}

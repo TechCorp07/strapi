@@ -1,0 +1,11 @@
+{
+  "collectionName": "components_impact_problem_statements",
+  "info": {
+    "displayName": "problem-statement",
+    "description": "The problem we are addressing"
+  },
+  "attributes": {
+    "title": { "type": "string", "required": true },
+    "summary": { "type": "text", "required": true }
+  }
+}

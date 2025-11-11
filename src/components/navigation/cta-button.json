@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_navigation_cta_buttons",
+  "info": {
+    "displayName": "CTA Button",
+    "description": "Call-to-action button configuration"
+  },
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true,
+      "default": "Get Started"
+    },
+    "href": {
+      "type": "string",
+      "required": true,
+      "default": "/contact"
+    }
+  }
+}

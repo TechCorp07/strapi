@@ -1,0 +1,11 @@
+{
+  "collectionName": "components_impact_focus_areas",
+  "info": {
+    "displayName": "focus-area",
+    "description": "Domain or sector focus"
+  },
+  "attributes": {
+    "name": { "type": "string", "required": true },
+    "description": { "type": "text" }
+  }
+}

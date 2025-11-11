@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "careers_settings",
+  "info": {
+    "singularName": "careers-setting",
+    "pluralName": "careers-settings",
+    "displayName": "Careers Settings",
+    "description": "Configuration for careers and job applications"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "careersEmail": {
+      "type": "email",
+      "required": true,
+      "default": "careers@peakpoint.com"
+    },
+    "autoNotifyOnApplication": {
+      "type": "boolean",
+      "default": true
+    },
+    "applicationConfirmationMessage": {
+      "type": "text",
+      "default": "Thank you for applying! We've received your application and will review it carefully."
+    }
+  }
+}

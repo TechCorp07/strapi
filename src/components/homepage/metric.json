@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_homepage_metrics",
+  "info": {
+    "displayName": "Metric",
+    "description": "Individual metric/statistic"
+  },
+  "options": {},
+  "attributes": {
+    "value": {
+      "type": "integer",
+      "required": true
+    },
+    "suffix": {
+      "type": "string",
+      "required": true,
+      "default": "+"
+    },
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "icon": {
+      "type": "enumeration",
+      "enum": ["globe", "users", "award", "trending-up", "target", "shield"],
+      "default": "award"
+    }
+  }
+}

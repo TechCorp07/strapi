@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_about_values",
+  "info": {
+    "displayName": "Value",
+    "description": "Core company value"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "icon": {
+      "type": "enumeration",
+      "enum": ["award", "trending-up", "shield", "users", "target", "globe", "heart", "star"],
+      "default": "award"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "kind": "singleType",
+  "collectionName": "partnership_settings",
+  "info": {
+    "singularName": "partnership-setting",
+    "pluralName": "partnership-settings",
+    "displayName": "Partnership Settings",
+    "description": "Configuration for partnership inquiries"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "partnershipEmail": {
+      "type": "email",
+      "required": true,
+      "unique": false,
+      "description": "Email address where partnership inquiries will be sent"
+    },
+    "ccEmails": {
+      "type": "json",
+      "description": "Array of additional email addresses to CC on partnership inquiries"
+    },
+    "autoReplyEnabled": {
+      "type": "boolean",
+      "default": true,
+      "description": "Send automatic confirmation email to inquirer"
+    },
+    "autoReplyMessage": {
+      "type": "richtext",
+      "description": "Message sent in automatic confirmation email"
+    },
+    "responseTimeHours": {
+      "type": "integer",
+      "default": 48,
+      "description": "Expected response time in hours"
+    }
+  }
+}

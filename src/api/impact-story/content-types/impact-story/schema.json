@@ -1,0 +1,58 @@
+{
+  "kind": "singleType",
+  "collectionName": "impact_story",
+  "info": {
+    "singularName": "impact-story",
+    "pluralName": "impact-stories",
+    "displayName": "Impact Story",
+    "description": "Our Story page content for grant applications and investor relations"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "impact.hero"
+    },
+    "mission": {
+      "type": "text",
+      "required": true
+    },
+    "vision": {
+      "type": "text",
+      "required": true
+    },
+    "problemStatement": {
+      "type": "component",
+      "repeatable": false,
+      "component": "impact.problem-statement"
+    },
+    "solution": {
+      "type": "component",
+      "repeatable": false,
+      "component": "impact.solution"
+    },
+    "impactMetrics": {
+      "type": "component",
+      "repeatable": true,
+      "component": "impact.metric"
+    },
+    "focusAreas": {
+      "type": "component",
+      "repeatable": true,
+      "component": "impact.focus-area"
+    },
+    "sdgAlignment": {
+      "type": "component",
+      "repeatable": true,
+      "component": "impact.sdg"
+    },
+    "theoryOfChange": {
+      "type": "component",
+      "repeatable": false,
+      "component": "impact.theory-of-change"
+    }
+  }
+}

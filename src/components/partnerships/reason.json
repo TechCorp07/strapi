@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_partnerships_reasons",
+  "info": {
+    "displayName": "Partnership Reason",
+    "description": "Reason to partner"
+  },
+  "attributes": {
+    "icon": {
+      "type": "string",
+      "required": true,
+      "default": "📊"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

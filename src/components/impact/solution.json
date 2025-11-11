@@ -1,0 +1,11 @@
+{
+  "collectionName": "components_impact_solutions",
+  "info": {
+    "displayName": "solution",
+    "description": "Our solution overview"
+  },
+  "attributes": {
+    "title": { "type": "string", "required": true },
+    "description": { "type": "text", "required": true }
+  }
+}

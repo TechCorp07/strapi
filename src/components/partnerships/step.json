@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_partnerships_steps",
+  "info": {
+    "displayName": "Partnership Step",
+    "description": "Partnership process step"
+  },
+  "attributes": {
+    "number": {
+      "type": "integer",
+      "required": true,
+      "min": 1,
+      "max": 10
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

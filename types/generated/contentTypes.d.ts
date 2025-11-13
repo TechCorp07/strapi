@@ -1289,6 +1289,17 @@ export interface ApiSiteSettingSiteSetting extends Struct.SingleTypeSchema {
   options: {
     draftAndPublish: false;
   };
+  pluginOptions: {
+    'content-api': {
+      visible: true;
+    };
+    'content-manager': {
+      visible: true;
+    };
+    'content-type-builder': {
+      visible: true;
+    };
+  };
   attributes: {
     addressLine1: Schema.Attribute.String &
       Schema.Attribute.DefaultTo<'Nairobi, Kenya'>;

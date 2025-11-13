@@ -17,8 +17,9 @@ export default [
   {
     name: 'strapi::cors',
     config: {
-      enabled: true,
       origin: ['http://localhost:3000', 'https://peakpoint.africa', 'https://www.peakpoint.africa'],
+      methods: ['GET','POST','PUT','PATCH','DELETE','HEAD','OPTIONS'],
+      headers: '*',
       credentials: true,
     },
   },

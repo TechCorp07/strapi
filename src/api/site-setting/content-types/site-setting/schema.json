@@ -10,6 +10,17 @@
   "options": {
     "draftAndPublish": false
   },
+  "pluginOptions": {
+    "content-api": {
+      "visible": true
+    },
+    "content-manager": {
+      "visible": true
+    },
+    "content-type-builder": {
+      "visible": true
+    }
+  },
   "attributes": {
     "siteName": {
       "type": "string",
@@ -115,13 +126,17 @@
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     },
     "favicon": {
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     },
     "metaTitle": {
       "type": "string",

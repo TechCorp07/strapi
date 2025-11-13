@@ -1373,6 +1373,40 @@ export interface ApiSiteSettingSiteSetting extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiSubServiceSubService extends Struct.SingleTypeSchema {
+  collectionName: 'sub_services';
+  info: {
+    displayName: 'sub-service';
+    pluralName: 'sub-services';
+    singularName: 'sub-service';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    benefits: Schema.Attribute.JSON;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    description: Schema.Attribute.Blocks & Schema.Attribute.Required;
+    features: Schema.Attribute.JSON;
+    heroImage: Schema.Attribute.Media<'images' | 'files'>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::sub-service.sub-service'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    slug: Schema.Attribute.UID<'title'> & Schema.Attribute.Required;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiTeamMemberTeamMember extends Struct.CollectionTypeSchema {
   collectionName: 'team_members';
   info: {
@@ -2050,6 +2084,7 @@ declare module '@strapi/strapi' {
       'api::partnerships-page.partnerships-page': ApiPartnershipsPagePartnershipsPage;
       'api::service-page.service-page': ApiServicePageServicePage;
       'api::site-setting.site-setting': ApiSiteSettingSiteSetting;
+      'api::sub-service.sub-service': ApiSubServiceSubService;
       'api::team-member.team-member': ApiTeamMemberTeamMember;
       'api::training-program.training-program': ApiTrainingProgramTrainingProgram;
       'api::training-resource.training-resource': ApiTrainingResourceTrainingResource;

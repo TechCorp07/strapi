@@ -1,0 +1,14 @@
+{
+  "kind": "singleType",
+  "collectionName": "sub_services",
+  "info": {
+    "singularName": "sub-service",
+    "pluralName": "sub-services",
+    "displayName": "sub-service"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {}
+}

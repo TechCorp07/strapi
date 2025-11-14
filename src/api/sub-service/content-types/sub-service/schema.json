@@ -1,10 +1,10 @@
 {
-  "kind": "singleType",
+  "kind": "collectionType",
   "collectionName": "sub_services",
   "info": {
     "singularName": "sub-service",
     "pluralName": "sub-services",
-    "displayName": "sub-service"
+    "displayName": "Sub Service"
   },
   "options": {
     "draftAndPublish": true
@@ -20,26 +20,21 @@
       "targetField": "title",
       "required": true
     },
-    "description": {
-      "type": "blocks",
-      "required": true
-    },
-    "subtitle": {
-      "type": "string"
-    },
-    "heroImage": {
-      "type": "media",
-      "multiple": false,
-      "allowedTypes": [
-        "images",
-        "files"
-      ]
-    },
-    "features": {
+    "stats": {
       "type": "json"
     },
     "benefits": {
       "type": "json"
+    },
+    "features": {
+      "type": "json"
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string"
     }
   }
 }

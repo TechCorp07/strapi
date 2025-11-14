@@ -1373,10 +1373,10 @@ export interface ApiSiteSettingSiteSetting extends Struct.SingleTypeSchema {
   };
 }
 
-export interface ApiSubServiceSubService extends Struct.SingleTypeSchema {
+export interface ApiSubServiceSubService extends Struct.CollectionTypeSchema {
   collectionName: 'sub_services';
   info: {
-    displayName: 'sub-service';
+    displayName: 'Sub Service';
     pluralName: 'sub-services';
     singularName: 'sub-service';
   };
@@ -1388,9 +1388,8 @@ export interface ApiSubServiceSubService extends Struct.SingleTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    description: Schema.Attribute.Blocks & Schema.Attribute.Required;
+    description: Schema.Attribute.RichText & Schema.Attribute.Required;
     features: Schema.Attribute.JSON;
-    heroImage: Schema.Attribute.Media<'images' | 'files'>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -1399,6 +1398,7 @@ export interface ApiSubServiceSubService extends Struct.SingleTypeSchema {
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
     slug: Schema.Attribute.UID<'title'> & Schema.Attribute.Required;
+    stats: Schema.Attribute.JSON;
     subtitle: Schema.Attribute.String;
     title: Schema.Attribute.String & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;

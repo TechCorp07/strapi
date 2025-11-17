@@ -52,7 +52,7 @@ export interface CaseStudyMetric extends Struct.ComponentSchema {
 export interface FooterContactInfo extends Struct.ComponentSchema {
   collectionName: 'components_footer_contact_info';
   info: {
-    description: 'Contact information for footer';
+    description: 'Contact information for footer with primary and secondary options';
     displayName: 'Contact Info';
   };
   attributes: {
@@ -69,8 +69,10 @@ export interface FooterContactInfo extends Struct.ComponentSchema {
       Schema.Attribute.DefaultTo<'+254 XXX XXX XXX'>;
     regionLocation: Schema.Attribute.String &
       Schema.Attribute.DefaultTo<'East Africa'>;
-    secondaryEmail: Schema.Attribute.Email;
-    secondaryPhone: Schema.Attribute.String;
+    secondaryEmail: Schema.Attribute.Email &
+      Schema.Attribute.DefaultTo<'sales@peakpoint.africa'>;
+    secondaryPhone: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'+1 XXX XXX XXXX (US)'>;
     supportAvailability: Schema.Attribute.String &
       Schema.Attribute.DefaultTo<'24/7 Support Available'>;
   };

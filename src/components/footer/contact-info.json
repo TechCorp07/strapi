@@ -2,7 +2,7 @@
   "collectionName": "components_footer_contact_info",
   "info": {
     "displayName": "Contact Info",
-    "description": "Contact information for footer"
+    "description": "Contact information for footer with primary and secondary options"
   },
   "options": {},
   "attributes": {
@@ -13,7 +13,8 @@
     },
     "secondaryEmail": {
       "type": "email",
-      "required": false
+      "required": false,
+      "default": "sales@peakpoint.africa"
     },
     "primaryPhone": {
       "type": "string",
@@ -22,7 +23,8 @@
     },
     "secondaryPhone": {
       "type": "string",
-      "required": false
+      "required": false,
+      "default": "+1 XXX XXX XXXX (US)"
     },
     "officeLocation": {
       "type": "string",

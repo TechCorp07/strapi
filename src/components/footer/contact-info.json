@@ -6,20 +6,43 @@
   },
   "options": {},
   "attributes": {
-    "email": {
+    "primaryEmail": {
       "type": "email",
       "required": true,
       "default": "info@peakpoint.africa"
     },
-    "phone": {
+    "secondaryEmail": {
+      "type": "email",
+      "required": false
+    },
+    "primaryPhone": {
       "type": "string",
       "required": true,
       "default": "+254 XXX XXX XXX"
     },
-    "address": {
-      "type": "text",
+    "secondaryPhone": {
+      "type": "string",
+      "required": false
+    },
+    "officeLocation": {
+      "type": "string",
       "required": true,
       "default": "Nairobi, Kenya"
+    },
+    "regionLocation": {
+      "type": "string",
+      "required": false,
+      "default": "East Africa"
+    },
+    "businessHours": {
+      "type": "string",
+      "required": false,
+      "default": "Mon-Fri: 8AM - 6PM EAT"
+    },
+    "supportAvailability": {
+      "type": "string",
+      "required": false,
+      "default": "24/7 Support Available"
     }
   }
 }

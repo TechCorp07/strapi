@@ -56,15 +56,23 @@ export interface FooterContactInfo extends Struct.ComponentSchema {
     displayName: 'Contact Info';
   };
   attributes: {
-    address: Schema.Attribute.Text &
+    businessHours: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Mon-Fri: 8AM - 6PM EAT'>;
+    officeLocation: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<'Nairobi, Kenya'>;
-    email: Schema.Attribute.Email &
+    primaryEmail: Schema.Attribute.Email &
       Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<'info@peakpoint.africa'>;
-    phone: Schema.Attribute.String &
+    primaryPhone: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<'+254 XXX XXX XXX'>;
+    regionLocation: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'East Africa'>;
+    secondaryEmail: Schema.Attribute.Email;
+    secondaryPhone: Schema.Attribute.String;
+    supportAvailability: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'24/7 Support Available'>;
   };
 }
 

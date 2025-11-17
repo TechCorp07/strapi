@@ -676,6 +676,7 @@ export interface ApiCaseStudyCaseStudy extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    description: Schema.Attribute.Text;
     image: Schema.Attribute.Media<'images'>;
     industry: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -684,6 +685,7 @@ export interface ApiCaseStudyCaseStudy extends Struct.CollectionTypeSchema {
       'api::case-study.case-study'
     > &
       Schema.Attribute.Private;
+    logo: Schema.Attribute.Media<'images'>;
     metrics: Schema.Attribute.Component<'case-study.metric', true>;
     publishedAt: Schema.Attribute.DateTime;
     results: Schema.Attribute.JSON & Schema.Attribute.DefaultTo<[]>;
@@ -691,10 +693,13 @@ export interface ApiCaseStudyCaseStudy extends Struct.CollectionTypeSchema {
       Schema.Attribute.Required &
       Schema.Attribute.Unique;
     solution: Schema.Attribute.RichText;
+    testimonial: Schema.Attribute.Text;
+    testimonialAuthor: Schema.Attribute.String;
     title: Schema.Attribute.String & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    videoUrl: Schema.Attribute.String;
   };
 }
 
@@ -982,6 +987,9 @@ export interface ApiInsightInsight extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     excerpt: Schema.Attribute.Text;
     featuredImage: Schema.Attribute.Media<'images'>;
+    industry: Schema.Attribute.Enumeration<
+      ['healthcare', 'education', 'enterprise', 'technology']
+    >;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',

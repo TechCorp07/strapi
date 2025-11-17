@@ -35,6 +35,10 @@
         "industry": {
             "type": "string"
         },
+        "description": {
+            "type": "text",
+            "required": false
+        },
         "challenge": {
             "type": "richtext"
         },
@@ -51,6 +55,22 @@
             "allowedTypes": [
                 "images"
             ]
+        },
+        "logo": {
+            "type": "media",
+            "multiple": false,
+            "allowedTypes": [
+                "images"
+            ]
+        },
+        "videoUrl": {
+            "type": "string"
+        },
+        "testimonial": {
+            "type": "text"
+        },
+        "testimonialAuthor": {
+            "type": "string"
         },
         "metrics": {
             "type": "component",

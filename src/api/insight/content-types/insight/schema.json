@@ -32,6 +32,11 @@
       "enum": ["blog", "news", "community", "case-study"],
       "default": "blog"
     },
+    "industry": {
+      "type": "enumeration",
+      "enum": ["healthcare", "education", "enterprise", "technology"],
+      "required": false
+    },
     "featuredImage": {
       "type": "media",
       "multiple": false,

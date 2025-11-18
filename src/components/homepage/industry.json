@@ -12,7 +12,20 @@
     },
     "icon": {
       "type": "enumeration",
-      "enum": ["heart", "graduation-cap", "building", "smartphone"],
+      "enum": [
+        "heart",
+        "graduation-cap",
+        "building",
+        "smartphone",
+        "briefcase",
+        "cpu",
+        "database",
+        "globe",
+        "shield",
+        "truck",
+        "factory",
+        "store"
+      ],
       "required": true
     },
     "description": {

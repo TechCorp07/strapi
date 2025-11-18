@@ -200,7 +200,20 @@ export interface HomepageIndustry extends Struct.ComponentSchema {
   attributes: {
     description: Schema.Attribute.Text & Schema.Attribute.Required;
     icon: Schema.Attribute.Enumeration<
-      ['heart', 'graduation-cap', 'building', 'smartphone']
+      [
+        'heart',
+        'graduation-cap',
+        'building',
+        'smartphone',
+        'briefcase',
+        'cpu',
+        'database',
+        'globe',
+        'shield',
+        'truck',
+        'factory',
+        'store',
+      ]
     > &
       Schema.Attribute.Required;
     name: Schema.Attribute.String & Schema.Attribute.Required;

@@ -37,6 +37,18 @@ export interface AboutValue extends Struct.ComponentSchema {
   };
 }
 
+export interface BenefitResult extends Struct.ComponentSchema {
+  collectionName: 'components_benefit_results';
+  info: {
+    description: 'Individual result or metric for a benefit case study';
+    displayName: 'Result';
+  };
+  attributes: {
+    description: Schema.Attribute.Text & Schema.Attribute.Required;
+    metric: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
 export interface CaseStudyMetric extends Struct.ComponentSchema {
   collectionName: 'components_case_study_metrics';
   info: {
@@ -131,15 +143,23 @@ export interface FooterSocialLinks extends Struct.ComponentSchema {
 export interface HomepageBenefit extends Struct.ComponentSchema {
   collectionName: 'components_homepage_benefits';
   info: {
-    description: 'Individual benefit item';
+    description: 'Individual benefit item with case study details';
     displayName: 'Benefit';
   };
   attributes: {
+    additionalImages: Schema.Attribute.Media<'images', true>;
+    caseStudySubtitle: Schema.Attribute.String;
+    caseStudyTitle: Schema.Attribute.String;
+    challenge: Schema.Attribute.RichText;
     description: Schema.Attribute.Text & Schema.Attribute.Required;
     image: Schema.Attribute.Media<'images'>;
     impact: Schema.Attribute.String;
+    industryInsight: Schema.Attribute.Text;
     link: Schema.Attribute.String;
+    results: Schema.Attribute.Component<'benefit.result', true>;
+    solution: Schema.Attribute.RichText;
     title: Schema.Attribute.String & Schema.Attribute.Required;
+    videoUrl: Schema.Attribute.String;
   };
 }
 
@@ -461,6 +481,7 @@ declare module '@strapi/strapi' {
     export interface ComponentSchemas {
       'about.stat': AboutStat;
       'about.value': AboutValue;
+      'benefit.result': BenefitResult;
       'case-study.metric': CaseStudyMetric;
       'footer.contact-info': FooterContactInfo;
       'footer.industry-column': FooterIndustryColumn;

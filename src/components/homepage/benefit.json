@@ -2,7 +2,7 @@
   "collectionName": "components_homepage_benefits",
   "info": {
     "displayName": "Benefit",
-    "description": "Individual benefit item"
+    "description": "Individual benefit item with case study details"
   },
   "options": {},
   "attributes": {
@@ -25,6 +25,42 @@
       "allowedTypes": ["images"]
     },
     "link": {
+      "type": "string",
+      "required": false
+    },
+    "caseStudyTitle": {
+      "type": "string",
+      "required": false
+    },
+    "caseStudySubtitle": {
+      "type": "string",
+      "required": false
+    },
+    "challenge": {
+      "type": "richtext",
+      "required": false
+    },
+    "solution": {
+      "type": "richtext",
+      "required": false
+    },
+    "results": {
+      "type": "component",
+      "repeatable": true,
+      "component": "benefit.result",
+      "required": false
+    },
+    "industryInsight": {
+      "type": "text",
+      "required": false
+    },
+    "additionalImages": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "videoUrl": {
       "type": "string",
       "required": false
     }

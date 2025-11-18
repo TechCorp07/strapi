@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_benefit_results",
+  "info": {
+    "displayName": "Result",
+    "description": "Individual result or metric for a benefit case study"
+  },
+  "options": {},
+  "attributes": {
+    "metric": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

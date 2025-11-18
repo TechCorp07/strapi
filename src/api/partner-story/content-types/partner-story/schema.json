@@ -1,0 +1,86 @@
+{
+  "kind": "collectionType",
+  "collectionName": "partner_stories",
+  "info": {
+    "singularName": "partner-story",
+    "pluralName": "partner-stories",
+    "displayName": "Partner Story",
+    "description": "Success stories with our partners and certifications"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true,
+      "unique": true
+    },
+    "partnerName": {
+      "type": "string",
+      "required": true
+    },
+    "partnerType": {
+      "type": "enumeration",
+      "enum": ["Technology Partner", "Strategic Alliance", "Certification Body", "Industry Association", "Training Partner"],
+      "required": true
+    },
+    "partnerLogo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"]
+    },
+    "featuredImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"]
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "challenge": {
+      "type": "richtext",
+      "required": true
+    },
+    "collaboration": {
+      "type": "richtext",
+      "required": true
+    },
+    "impact": {
+      "type": "richtext",
+      "required": true
+    },
+    "metrics": {
+      "type": "component",
+      "repeatable": true,
+      "component": "partner-story.metric",
+      "required": true,
+      "min": 2,
+      "max": 4
+    },
+    "testimonial": {
+      "type": "text"
+    },
+    "testimonialAuthor": {
+      "type": "string"
+    },
+    "partnerWebsite": {
+      "type": "string"
+    },
+    "partnershipDate": {
+      "type": "date"
+    },
+    "tags": {
+      "type": "json",
+      "default": []
+    }
+  }
+}

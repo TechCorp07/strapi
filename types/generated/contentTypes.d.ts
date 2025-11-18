@@ -1099,6 +1099,70 @@ export interface ApiMetricsSectionMetricsSection
   };
 }
 
+export interface ApiPartnerStoryPartnerStory
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'partner_stories';
+  info: {
+    description: 'Success stories with our partners and certifications';
+    displayName: 'Partner Story';
+    pluralName: 'partner-stories';
+    singularName: 'partner-story';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    challenge: Schema.Attribute.RichText & Schema.Attribute.Required;
+    collaboration: Schema.Attribute.RichText & Schema.Attribute.Required;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    description: Schema.Attribute.Text & Schema.Attribute.Required;
+    featuredImage: Schema.Attribute.Media<'images'> & Schema.Attribute.Required;
+    impact: Schema.Attribute.RichText & Schema.Attribute.Required;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::partner-story.partner-story'
+    > &
+      Schema.Attribute.Private;
+    metrics: Schema.Attribute.Component<'partner-story.metric', true> &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetMinMax<
+        {
+          max: 4;
+          min: 2;
+        },
+        number
+      >;
+    partnerLogo: Schema.Attribute.Media<'images'> & Schema.Attribute.Required;
+    partnerName: Schema.Attribute.String & Schema.Attribute.Required;
+    partnershipDate: Schema.Attribute.Date;
+    partnerType: Schema.Attribute.Enumeration<
+      [
+        'Technology Partner',
+        'Strategic Alliance',
+        'Certification Body',
+        'Industry Association',
+        'Training Partner',
+      ]
+    > &
+      Schema.Attribute.Required;
+    partnerWebsite: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    slug: Schema.Attribute.UID<'title'> &
+      Schema.Attribute.Required &
+      Schema.Attribute.Unique;
+    tags: Schema.Attribute.JSON & Schema.Attribute.DefaultTo<[]>;
+    testimonial: Schema.Attribute.Text;
+    testimonialAuthor: Schema.Attribute.String;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiPartnersSectionPartnersSection
   extends Struct.SingleTypeSchema {
   collectionName: 'partners_section';
@@ -2087,6 +2151,7 @@ declare module '@strapi/strapi' {
       'api::insight.insight': ApiInsightInsight;
       'api::job-application.job-application': ApiJobApplicationJobApplication;
       'api::metrics-section.metrics-section': ApiMetricsSectionMetricsSection;
+      'api::partner-story.partner-story': ApiPartnerStoryPartnerStory;
       'api::partners-section.partners-section': ApiPartnersSectionPartnersSection;
       'api::partnership-setting.partnership-setting': ApiPartnershipSettingPartnershipSetting;
       'api::partnerships-page.partnerships-page': ApiPartnershipsPagePartnershipsPage;

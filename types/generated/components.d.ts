@@ -400,6 +400,19 @@ export interface NavigationMenuItem extends Struct.ComponentSchema {
   };
 }
 
+export interface PartnerStoryMetric extends Struct.ComponentSchema {
+  collectionName: 'components_partner_story_metrics';
+  info: {
+    description: 'Metric for partner story results';
+    displayName: 'Partner Story Metric';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    label: Schema.Attribute.String & Schema.Attribute.Required;
+    value: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
 export interface PartnershipsOpportunity extends Struct.ComponentSchema {
   collectionName: 'components_partnerships_opportunities';
   info: {
@@ -504,6 +517,7 @@ declare module '@strapi/strapi' {
       'impact.theory-of-change': ImpactTheoryOfChange;
       'navigation.cta-button': NavigationCtaButton;
       'navigation.menu-item': NavigationMenuItem;
+      'partner-story.metric': PartnerStoryMetric;
       'partnerships.opportunity': PartnershipsOpportunity;
       'partnerships.reason': PartnershipsReason;
       'partnerships.step': PartnershipsStep;
